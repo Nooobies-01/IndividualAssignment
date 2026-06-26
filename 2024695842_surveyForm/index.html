@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
 
+  <body>
+    <h1 id="title">Food Service Feedback Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the service</p>
+    <form id="survey-form">
+      <label id="name-label">Name:</label>
+      <input id="name" type="text" required placeholder="e.g. Micheal"></input>
+      <label id="email-label">Email:</label>
+      <input id="email" type="email" required placeholder="email@email.com"></input>
+      <label id="number-label">Number:</label>
+      <input id="number" type="number" min="0" max="10" placeholder="10"></input>
+      
+      <label>How did you hear about us?</label><br>
+      <select id="dropdown">
+        <option value="social">Social Media</option>
+        <option value="friend">Friend</option>
+        <option value="ads">Advertisement</option>
+        </select>
+
+            <p>Would you recommend this service?</p>
+            <input type="radio" name="recommend" value="yes"> Yes</input>
+            <input type="radio" name="recommend" value="no"> No</input>
+
+            <p>What should we improve on? (Select all that apply)</p>
+            <input type="checkbox" value="variety-food"> Variety Food</input>
+            <input type="checkbox" value="delivery-time"> Delivery Time</input>
+            <input type="checkbox" value="packaging"> Packaging</input>
+            <input type="checkbox" value="service">Service</input>
+
+            <p>Any new suggestion:</p>
+            <textarea placeholder="Write your suggestion here..."></textarea>
+            
+            <button id="submit" type="submit">Submit</button>
+      </form>
+  </body>
+</html>
