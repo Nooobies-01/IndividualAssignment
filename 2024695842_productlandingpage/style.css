@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+#header-img {
+  width: 250px;
+}
+
+/* Navigation */
+
+#nav-bar {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* Main */
+
+main {
+  margin-top: 120px;
+  padding: 20px;
+}
+
+#hero {
+  text-align: center;
+  padding: 40px;
+}
+
+#form {
+  margin-top: 20px;
+}
+
+#email {
+  padding: 10px;
+  width: 250px;
+}
+
+#submit {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Features */
+
+#features {
+  padding: 40px 0;
+}
+
+.feature {
+  margin: 20px 0;
+}
+
+/* Video */
+
+#video-section {
+  text-align: center;
+  padding: 40px 0;
+}
+
+/* Pricing */
+
+.price-container {
+  display: flex; /* Flexbox requirement */
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid black;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+/* Media Query */
+
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+  }
+
+  #nav-bar {
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #header-img {
+    width: 180px;
+  }
+}
